@@ -1,7 +1,28 @@
-const VRMA_ANIMATION_URLS = [
-    'path/to/Angry.vrma',
-    'path/to/Blush.vrma'
-];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRM Viewershuyou</title>
+    <script src="<script src='https://cdn.jsdelivr.net/gh/Figurehead/ThreeVRM@latest/dist/threevrm.js'></script>">
+</head>
+<body>
+    <h1>VRM Viewershuyou</h1>
+    <button id="angry-button">Angry</button>
+    <button id="blush-button">Blush</button>
+    <script>
+        const VRMA_ANIMATION_URLS = {
+            angry: 'path/to/angry-animation.anim',
+            blush: 'path/to/blush-animation.anim'
+        };
 
-// Your other existing code...
-// Ensure to remove other animation buttons from the DOM
+        document.getElementById('angry-button').onclick = function() {
+            // Function to trigger angry animation
+        };
+
+        document.getElementById('blush-button').onclick = function() {
+            // Function to trigger blush animation
+        };
+    </script>
+</body>
+</html>
